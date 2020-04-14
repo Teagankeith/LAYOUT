@@ -1,0 +1,272 @@
+﻿@charset "utf-8";
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #000000 url('../images/background.png') no-repeat top center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #ab7831;
+	overflow-y: scroll;
+}
+
+a
+{
+	color: #ab7831;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #b5c7db;
+	text-decoration: none;
+}
+
+#page
+{
+	width: 1280px;
+	margin: auto;
+}
+
+#header 
+{
+	width: 1280px;
+	height: 211px;
+	float: left;
+	background: url('../images/logo.png') no-repeat center;
+}
+
+#menu
+{
+	width: 190px;
+	float: left;
+}
+
+.nav
+{
+	width: 190px;
+	height: 34px;
+	float: left;
+	cursor: pointer;
+	background: url('../images/menu-button.png') no-repeat;
+}
+
+.links
+{
+	width: 180px;
+	height: auto;
+	background: url('../images/menu-chains.png') repeat-y;
+	float: left;
+	padding-left: 10px;
+}
+
+	.links ul
+	{
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.links li a
+	{
+		display: block;
+		width: 135px;
+		background: #121212;
+		border-bottom: 1px solid #272727;
+		float: left;
+		padding: 4px;
+		margin-left: 15px;
+		color: #ab7831;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	.links li a:hover
+	{
+		background: #181818;
+		border-bottom: 1px solid #2D2D2D;
+		color: #FFF;
+	}
+
+#cnt-box
+{
+	width: 904px;
+	float: left;
+}
+
+	#top
+	{
+		width: 904px;
+		height: 47px;
+		float: left;
+		background: url('../images/top_2.png') no-repeat;
+	}
+	
+	#mid
+	{
+		width: 904px;
+		float: left;
+		background: url('../images/mid_2.png') repeat-y;
+	}
+	
+		#margins
+		{
+			margin-left: 25px;
+			margin-right: 25px;
+			text-align: justify;
+		}
+	
+	#bot
+	{
+		width: 904px;
+		height: 48px;
+		float: left;
+		background: url('../images/bot_2.png') no-repeat;
+	}
+	
+	#copyrights
+	{
+		width: 904px;
+		padding: 10px;
+		float: left;
+		color: #5F5F5F;
+		text-align: center;
+	}
+	
+	#adverts
+	{
+		width: 176px;
+		padding: 5px;
+		float: left;
+	}
+	
+	
+/** -------------------------------
+ *  Stylesheet declarations for the
+ *  NEW TABLES
+ *  -------------------------------
+ */
+
+.newscontent {
+	padding-left: 10px;
+	text-align: left;
+	line-height: 28px; 
+	color:white;
+}
+.newscontent2 {
+	margin: 10px;
+}
+
+table { 
+  width: 100%;
+}
+
+table tr th, table tr td { 
+  background: #555555;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+
+tr.yellow td {
+  background: #555555;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #E5E5DB;
+  color: #47433F;
+  border-top: 1px solid #FFF;
+}
+
+/* guild war */
+tr.special:hover td {
+   background: skyblue;
+}
+
+tr.special {
+    cursor: pointer;
+}
+
+ul.war_list li {
+   font-size:18px;
+}
+
+
+/* snow effect */
+.snow {
+	position: fixed;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	background: none;
+	background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+	z-index: 100;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+	0% {
+		background-position: 0px 0px, 0px 0px, 0px 0px;
+	}
+
+	50% {
+		background-position: 500px 500px, 100px 200px, -100px 150px;
+	}
+
+	100% {
+		background-position: 500px 1000px, 200px 400px, -100px 300px;
+	}
+}
+
+@-moz-keyframes snow {
+	0% {
+		background-position: 0px 0px, 0px 0px, 0px 0px;
+	}
+
+	50% {
+		background-position: 500px 500px, 100px 200px, -100px 150px;
+	}
+
+	100% {
+		background-position: 400px 1000px, 200px 400px, 100px 300px;
+	}
+}
+
+@-webkit-keyframes snow {
+	0% {
+		background-position: 0px 0px, 0px 0px, 0px 0px;
+	}
+
+	50% {
+		background-position: 500px 500px, 100px 200px, -100px 150px;
+	}
+
+	100% {
+		background-position: 500px 1000px, 200px 400px, -100px 300px;
+	}
+}
+
+@-ms-keyframes snow {
+	0% {
+		background-position: 0px 0px, 0px 0px, 0px 0px;
+	}
+
+	50% {
+		background-position: 500px 500px, 100px 200px, -100px 150px;
+	}
+
+	100% {
+		background-position: 500px 1000px, 200px 400px, -100px 300px;
+	}
+}
